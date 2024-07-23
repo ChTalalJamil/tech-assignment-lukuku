@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    padding: 0.7rem 0;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    color: black;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.nav-mid {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-mid .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+.logo img{
+    width: 150px;
+
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: calc(100vh - 70px); /* Adjust the height based on navbar height */
+    object-fit: cover;
+}
+.blueMark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0000C5 !important;
+    
+}
+
+.cstm-blueMark{
+    background-color: #0000C5;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+.search-icon{
+width: 18px;
+}
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left, .nav-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-left, .nav-right, .nav-mid {
+        margin: 10px 0;
+    }
+
+    .nav-mid {
+        text-align: center;
+        order: 0; /* Ensure the logo is in the middle */
+    }
+
+    .nav-left, .nav-right {
+        order: 1;
+    }
+    .nav-left a, .nav-right a {
+        margin: 0 0;
+    }
+}
