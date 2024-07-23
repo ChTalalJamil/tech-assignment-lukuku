@@ -88,7 +88,8 @@ width: 18px;
  
         background: white;
         margin-bottom: 100px;
-        padding: 10px 11px;
+        margin-left: 100px;
+        padding: 8px 8px;
     }
 @media (max-width: 768px) {
     .nav-container {
@@ -117,11 +118,5 @@ width: 18px;
         margin: 0 0;
     }
 
-    .hero-content {
-        text-align: center;
-    }
-    .rectangle-div{
-        margin-bottom: 30px;
-    }
 }
 
