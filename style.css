@@ -54,12 +54,19 @@ nav {
     display: flex;
     align-items: center;
 }
-
-.hero img {
+.hero {
     width: 100%;
-    height: calc(100vh - 70px); /* Adjust the height based on navbar height */
+    height: calc(100vh - 30px); 
     object-fit: cover;
+    background-image: url('https://s3-alpha-sig.figma.com/img/2e0f/d163/4a2c0c99b40b8b9a5c4d185317c3ccae?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BwjcvIwdw7ERrs3hooZHE2hnuglf4PBcRnzv0~kp-zdDenHe-eWM0Q~ht457yBNnUl2APVl3TpEdYzjtDbE8Zqv2cmw~DaGS3RaCqx2oeALnseJAd6j1wnAcezbSELtA~vSD5DuGbM0HDieX5ZIgfNyKNRLZxu3M3jqlcfJukR6q8EhC8ncOP3-RtyYpyy1b0IiM8KL88bjwChTiMmEHUcz5ujBYHejRcRIL5c8Ju6iR0q5YiQ57eKjyZ9lfrCzmnWeWCvs2yG-Y32SonEyNRdi5e~NGYoPkScviJwGakP4FgOz6MYnSvAoVtKGjZqszsVdOHqnl9tpOgqkitufI5g__');
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
+
 .blueMark{
     display: flex;
     align-items: center;
@@ -77,6 +84,12 @@ nav {
 .search-icon{
 width: 18px;
 }
+.rectangle-div{
+ 
+        background: white;
+        margin-bottom: 100px;
+        padding: 10px 11px;
+    }
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -94,7 +107,7 @@ width: 18px;
 
     .nav-mid {
         text-align: center;
-        order: 0; /* Ensure the logo is in the middle */
+        order: 0; 
     }
 
     .nav-left, .nav-right {
@@ -103,4 +116,12 @@ width: 18px;
     .nav-left a, .nav-right a {
         margin: 0 0;
     }
+
+    .hero-content {
+        text-align: center;
+    }
+    .rectangle-div{
+        margin-bottom: 30px;
+    }
 }
+
