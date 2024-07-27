@@ -87,9 +87,9 @@ width: 18px;
 .rectangle-div{
  
         background: white;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
         margin-left: 129px;
-        padding: 8px 8px;
+        padding: 10px 10px;
     }
 @media (max-width: 768px) {
     .nav-container {
